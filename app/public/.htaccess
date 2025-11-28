@@ -1,1 +1,4 @@
 RewriteEngine On
+#Redirige todas las solicitudes a index.php,excepto la raiz '/'
+RewriteCond %{REQUEST_URI} !^$
+RewriteRule ^ public/Index.php[L]
